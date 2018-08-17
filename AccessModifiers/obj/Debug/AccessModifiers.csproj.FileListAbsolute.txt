@@ -1,0 +1,10 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\AccessModifiers.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\AccessModifiers.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\AccessModifiers.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\CSharpTutorialForBeginners.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\CSharpTutorialForBeginners.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\bin\Debug\CSharpTutorialForBeginners.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\obj\Debug\AccessModifiers.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\obj\Debug\AccessModifiers.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\obj\Debug\AccessModifiers.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AccessModifiers\obj\Debug\AccessModifiers.pdb

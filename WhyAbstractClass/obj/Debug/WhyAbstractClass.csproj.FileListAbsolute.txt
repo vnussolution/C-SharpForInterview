@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\bin\Debug\WhyAbstractClass.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\bin\Debug\WhyAbstractClass.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\bin\Debug\WhyAbstractClass.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\obj\Debug\WhyAbstractClass.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\obj\Debug\WhyAbstractClass.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\WhyAbstractClass\obj\Debug\WhyAbstractClass.pdb

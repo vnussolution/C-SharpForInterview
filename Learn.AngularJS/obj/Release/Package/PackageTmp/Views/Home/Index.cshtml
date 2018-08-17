@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row" ng-controller="myController">
+    <div class="col-lg-6 col-lg-offset-3 ">
+        <br /><br />
+        Rows to display : <input type="number" step="1" ng-model="rowCount" max="5" min="0"/>
+
+        <br/><br/>
+        Sort By :
+        <select ng-model="sortColumn">
+            <option value="name">Name ASC</option>
+            <option value="+dateOfBirth">Date of Birth ASC</option>
+            <option value="+gender">Gender ASC</option>
+            <option value="-salary">Salary DESC</option>
+        </select>
+        <br />
+        <br />
+        Search : <input type="text" placeholder="Search employees"ng-model="searchText.name" />
+        <input type="text" placeholder="Search city" ng-model="searchText.city" />
+        <input type="checkbox" ng-model="exactMatch" /> Exact Match
+        <br /><br />
+        <input type="checkbox" ng-model="hideSalary" />Hide Salary
+        <br /><br />
+        <table>
+            <thead>
+            <tr>
+                <th ng-click="sortData('name')">Name <div ng-class="getSortClass('name')"></div>
+                </th>
+                <th ng-click="sortData('dateOfBirth')">Date of Birth <div ng-class="getSortClass('dateOfBirth')"></div>
+                </th>
+                <th ng-click="sortData('gender')">Gender <div ng-class="getSortClass('gender')"></div>
+                </th>
+                <th ng-hide="hideSalary" ng-click="sortData('salary')">Salary <div ng-class="getSortClass('salary')"></div>
+                <th ng-show="hideSalary" ng-click="sortData('salary')">Salary <div ng-class="getSortClass('salary')"></div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="employee in employees | filter:searchText:exactMatch | limitTo:rowCount | orderBy:sortColumn:reverseSort">
+                <td> {{ employee.name | uppercase }} </td>
+                <td> {{ employee.dateOfBirth | date:"dd/MM/yyyy" }} </td>
+                <td> {{ employee.gender | gender }} </td>
+                <td ng-hide="hideSalary"> {{ employee.salary | number:2}} </td>
+                <td ng-show="hideSalary"> ##### </td>
+                <td> {{ employee.salary | currency:'$':1}} </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul ng-repeat="country in countries">
+            <li>
+                {{country.name}}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{city.name}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Likes</th>
+            <th>Dislikes</th>
+            <th>Like/Dislike</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="technology in technologies">
+            <td> {{ technology.name }} </td>
+            <td style="text-align:center"> {{ technology.likes }} </td>
+            <td style="text-align:center"> {{ technology.dislikes }} </td>
+            <td>
+                <input type="button" ng-click="incrementLikes(technology)" value="Like" />
+                <input type="button" ng-click="incrementDislikes(technology)" value="Dislike" />
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <br /><br />
+    Select View :
+    <select ng-model="employeeView">
+        <option value="employeeTable.html">Table</option>
+        <option value="employeeList.html">List</option>
+    </select>
+    <br /><br />
+    <div ng-include="employeeView">
+    </div>
+</div>
+
+
+<script type="text/ng-template" id="employeeTable.html">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td> {{ employee.name }} </td>
+                <td> {{ employee.gender}} </td>
+                <td> {{ employee.salary}} </td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script type="text/ng-template" id="employeeList.html">
+
+    <ul ng-repeat="employee in employees">
+        <li>
+            {{employee.name}}
+            <ul>
+                <li>{{employee.gender}}</li>
+                <li>{{employee.salary}}</li>
+            </ul>
+        </li>
+    </ul>
+</script>

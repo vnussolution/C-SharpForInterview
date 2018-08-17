@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{D6CA4A98-FA87-4C06-A0A6-B349C5372ECF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AbstractClass/Program.cs">
+    <Files>
+      <File FileName="CSharpTutorialForBeginners/Program.cs" Line="26" Column="25" />
+      <File FileName="AbstractClass/Program.cs" Line="62" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.BitwiseOperators PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CSharpTutorialForBeginners PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AbstractClass PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

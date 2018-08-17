@@ -1,0 +1,425 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <div class="form-group">
+            <label>
+                Firstname
+            </label>
+            <input type="text" name="firstname" class="form-control" id="firstname" />
+        </div>
+        <div class="form-group">
+            <label>
+                Firstname
+            </label>
+            <input type="text" name="lastname" class="form-control" id="lastname" />
+        </div>
+        <div class="form-group">
+            <label>
+                email
+            </label>
+            <input type="text" name="email" class="form-control" id="email" />
+        </div>
+        <div class="form-group">
+            <label id="label-message"></label>
+
+        </div>
+
+        <div class="form-group">
+            <div id="div1" class="div-style">
+                DIV 1
+                <div id="div2" class="div-style">
+                    DIV 2
+                    <div id="div3" class="div-style"> DIV 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success" onclick="addNumbers()">Parse Float</button>
+            <button class="btn btn-success" onclick="concatString()">Concat String</button>
+            <button class="btn btn-success" onclick="subString()">SubString</button>
+            <button class="btn btn-success" onclick="ternaryOperator()">Ternary</button>
+            <button class="btn btn-success" onclick="array()">Array</button>
+            <button class="btn btn-success" onclick="arrayMutators()">Array Mutators</button>
+            <button class="btn btn-success" onclick="filterArray()">filterArray</button>
+            <button class="btn btn-success" onclick="uniqueArray()">uniqueArray</button>
+            <button class="btn btn-success" onclick="arrayOfArray()">arrayOfArray</button>
+            <button class="btn btn-success" onclick="functions()">functions</button>
+            <button class="btn btn-success" onclick="globalLocalVariables()">globalLocalVariables</button>
+            <button class="btn btn-success" onclick="myClosure()">closure</button>
+            <button class="btn btn-success" onclick="argumentsObject(7,5,2,3)">argumentsObject</button>
+            <button class="btn btn-success" onclick="todayDate()">todayDate</button>
+            <button class="btn btn-success" id="timingEvents" onclick="timingEvents()">setTimeInterval</button>
+            <button class="btn btn-success" id="btnEventHandler">domEventHandler</button>
+            <button class="btn btn-success" onclick="getEventDetails(event)" onmouseleave="getEventDetails(event)">getEventDetails</button>
+            <button class="btn btn-success" onclick="preventDefault()">preventDefault</button>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script>
+
+        function preventDefault() {
+            document.oncontextmenu = preventDefaultAction;
+
+            //use this to prevent right click, or disable a huperlink
+            function preventDefaultAction(event) {
+                event.preventDefault();
+            }
+        }
+
+
+        (function eventBubbling() {
+            var divElements = document.getElementsByClassName('div-style');
+
+            for (var i = 0; i < divElements.length; i++) {
+                divElements[i].onclick = function (event) {
+
+                    var e = event || window.event;
+
+                    e.stopPropagation(); // stop bubbling up the event
+                    this.style.borderColor = 'red';
+                    document.getElementById('label-message').innerHTML +=
+                        this.getAttribute('id') + ' border color changed - ';
+                    console.log(this.getAttribute('id') + 'border color changed');
+
+                }
+            }
+        })();
+
+
+
+        function getEventDetails(e) {
+
+            document.getElementById('label-message').innerHTML = 'event type: ' +
+                e.type +
+                ' , x =' +
+                e.clientX +
+                ' , y = ' +
+                e.clientY +
+                ' target type = ' +
+                e.target.type +
+                ', target tag name = ' +
+                e.target.tagName;
+        }
+
+
+        (function domEventHandler() {
+            document.getElementById('btnEventHandler').onmouseover = onMouseOver;
+
+            window.document.getElementById('btnEventHandler').onmouseleave = onMouseLeave;
+
+
+            btnEventHandler.addEventListener('mousewheel', onMouseWheel);
+
+
+            function onMouseOver() {
+                this.style.background = 'red';
+                this.style.color = 'yellow';
+            }
+
+            function onMouseLeave() {
+                this.style.background = 'green';
+                this.style.color = 'white';
+            }
+
+            function onMouseWheel() {
+                this.style.background = 'blue';
+                this.style.color = 'brown';
+            }
+
+        })();
+
+
+        function timingEvents() {
+            var id;
+            var count = 0;
+            var label = document.getElementById('label-message');
+            var button = document.getElementById('timingEvents');
+
+            (function () {
+                count++;
+                if (count % 2 !== 0)
+                    startClock();
+                else
+                    stopClock();
+
+
+            })();
+
+            function stopClock() {
+                clearTimeout(id);
+                button.classList.toggle('btn-success');
+                button.classList.toggle('btn-danger');
+            }
+
+            function startClock() {
+
+                id = setInterval(() => { label.innerHTML = new Date(); }, 1000);
+                button.classList.toggle('btn-success');
+                button.classList.toggle('btn-danger');
+
+            }
+        };
+
+        function todayDate() {
+
+            var today = new Date();
+            var day = today.getDay();
+            var month = today.getMonth();
+
+            console.log(' day = ', getWeekDayNameFromNumber(day), ' month = ', getMonthNameFromNumber(month));
+
+            function getMonthNameFromNumber(monthNumber) {
+                var monthNames = [
+                    "January", "February", "March", "April",
+                    "May", "June", "July", "August", "September",
+                    "October", "November", "December"
+                ];
+                return monthNames[monthNumber];
+            }
+
+            function getWeekDayNameFromNumber(dayNumber) {
+                var weekDays = [
+                    "Sunday", "Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday"
+                ];
+                return weekDays[dayNumber];
+            }
+
+
+        }
+
+        function argumentsObject() {
+            var sum = 0;
+
+            for (var i = 0; i < arguments.length; i++) {
+                sum = sum + arguments[i];
+            }
+
+            var argArray = Array.prototype.slice.call(arguments);
+            argArray.sort();
+
+            console.log(' sum = ', sum, ' arguments sorted: ', argArray);
+        }
+
+        function parseFloatInput() {
+
+            // parseFloat
+            var firstnumber = parseFloat(document.getElementById('firstname').value);
+
+            if (isNaN(firstnumber)) {
+                alert('please enter number');
+                return;
+            }
+
+            var secondnumber = parseFloat(document.getElementById('lastname').value);
+
+            if (isNaN(secondnumber)) {
+                alert('please enter number');
+                return;
+            }
+            document.getElementById('label-message').innerHTML = firstnumber + secondnumber;
+        }
+
+        function concatString(parameters) {
+            var firstname = document.getElementById('firstname').value;
+            var lastname = document.getElementById('lastname').value;
+
+            document.getElementById('label-message').innerHTML = firstname.trim().concat(' -',
+                lastname.toUpperCase(),
+                firstname.length,
+                firstname.replace('t', 'yyyy'),
+                firstname.replace(/blue/g, '[blue->green]'), // global replacement case-sensitive
+                firstname.replace(/red/gi, '[red->yellow]') // gloabel replacement case-insensitive
+            );
+
+
+        }
+
+        function subString(parameters) {
+
+        }
+
+        function hello(message) {
+            console.log(' message ', message);
+        }
+
+        function ternaryOperator(parameters) {
+            var firstname = document.getElementById('firstname').value;
+
+            //
+            firstname.length > 5
+                ? (console.log('hello 1'), hello('length more than 5'))
+                : (console.log('hello 3'), hello(' length less than 5'));
+        }
+
+        function array() {
+            var arr = [2, 3];
+            var str = '';
+            arr.push(4); // add to the last position
+            arr.unshift(1); // add 1 to the first position
+
+            for (var i = 0; i < arr.length; i++) {
+                str += arr[i] + ' ';
+            }
+
+
+            document.getElementById('label-message').innerHTML = str;
+
+            console.log(arr.pop(), arr); // remove and return the last item in the arry
+        }
+
+        function arrayMutators(parameters) {
+
+            var stringArray = ['tester', 'programmer', 'project manager', 'boss'];
+            var numberArray = [1, 23, 4, 5, 6, 7, 43, 55, 67, 3, 9, 6, 3, 2];
+            var numberArrayReverse = [1, 23, 4, 5, 6, 7, 43, 55, 67, 3, 9, 6, 3, 2];
+
+
+            // sort method is for string not number, need to override it to use it
+            stringArray.sort();
+
+            numberArray.sort((a, b) => a - b); //sort number
+
+            numberArray.sort((a, b) => a - b).reverse(); //sort number and then reverse
+
+            numberArrayReverse.sort((a, b) => b - a); //reverse sorting number
+
+
+            //numberArray.splice(index where to start, delete count, optional items to add);
+            numberArray.splice(2, 0, 'uuuuu', 'oooooooo', 'iiiiii');
+
+
+            console.info('stringArray: ', stringArray);
+            console.info('numberArray: ', numberArray);
+            console.info('numberArrayReverse: ', numberArrayReverse);
+
+
+        }
+
+        function filterArray() {
+            var numberArray = [
+                1, 23, 4, 5, 6, 7, 4, 3, 8, 9, 6, 2
+            ];
+
+
+            var evenNumbersArray = numberArray.filter((value, index, array) => {
+                console.log('value : ', value, ' index: ', index, 'array: ', array);
+
+                return value % 2 === 0;
+            });
+
+            console.log(' even numbers array ', evenNumbersArray);
+            console.log(' numbers array ', numberArray);
+
+        }
+
+        function uniqueArray() {
+            var stringArray = ['tester', 'coder', 'boss', 'tester', 'coder', 'helper'];
+
+
+            var uniqueArray = stringArray.filter((value, index, array) => {
+                console.log('value : ', value, ' index: ', index, 'array: ', array);
+
+                return array.indexOf(value) === index;
+            });
+
+            console.log('uniqueArray ', uniqueArray);
+            console.log(' string array ', stringArray);
+
+        }
+
+        function arrayOfArray(parameters) {
+            var array1 = [];
+            var array2 = [];
+            var array3 = [];
+
+            var length = 3;
+
+            for (var i = 0; i < length; i++) {
+                var array11 = [];
+                var array22 = [];
+
+                for (var j = 0; j < length; j++) {
+                    array11.push(Math.floor(Math.random() * 10)); // random number between 0 - 10
+                    array22.push(Math.floor(Math.random() * 10));
+
+                }
+                array1.push(array11);
+                array2.push(array22);
+            }
+
+            for (var i = 0; i < length; i++) {
+                var array33 = [];
+                for (var j = 0; j < length; j++) {
+                    array33[j] = array1[i][j] + array2[i][j];
+
+                }
+                array3.push(array33);
+            }
+
+
+            console.log('array1: ', array1);
+            console.log('array2: ', array2);
+            console.log('array3: ', array3);
+
+        }
+
+        function functions(parameters) {
+            var sum = addNumbers(2, 3); // ok
+
+            var subs = substract(2, 3); // ERROR: function expression is not hoisted
+
+
+            console.log('sum: ', sum);
+            console.log('Substract : ', subs);
+
+
+            // function hoisting
+            function addNumbers(a, b) { // by default, js moves all the function declarations to the top of the current scope
+                return a + b;
+            }
+
+            // functions defined using a function expression are not hoisted
+            var substract = function (a, b) {
+                return a - b;
+            }
+
+            // named function expression is similar to anonymous function expression
+            var factorial = function facto(a) { // facto can only be used inside the function
+                if (a <= 1) return 1;
+                return a * facto(a - 1);
+            }
+
+        }
+
+        function globalLocalVariables() {
+            var number = 2;
+            if (number > 1) {
+                var other = number;
+
+            }
+            console.log(' print : ',
+                other); // { } doesn't define  a scope for variable like other languages C#,java  // other becomes global variable // print : 2
+        }
+
+        var myClosure = (function closure() {
+
+            var clickCount = 0;
+
+            return function () { return console.log('click count: ', ++clickCount); }
+        })();
+
+
+    </script>
+}

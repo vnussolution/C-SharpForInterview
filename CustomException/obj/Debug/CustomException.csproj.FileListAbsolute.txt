@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\bin\Debug\CustomException.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\bin\Debug\CustomException.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\bin\Debug\CustomException.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\obj\Debug\CustomException.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\obj\Debug\CustomException.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\obj\Debug\CustomException.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CustomException\obj\Debug\CustomException.pdb

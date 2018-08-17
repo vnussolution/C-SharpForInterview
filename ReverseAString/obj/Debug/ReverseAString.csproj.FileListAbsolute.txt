@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\bin\Debug\ReverseAString.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\bin\Debug\ReverseAString.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\bin\Debug\ReverseAString.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\obj\Debug\ReverseAString.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\obj\Debug\ReverseAString.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\obj\Debug\ReverseAString.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ReverseAString\obj\Debug\ReverseAString.csprojResolveAssemblyReference.cache

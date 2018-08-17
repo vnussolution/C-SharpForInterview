@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\bin\Debug\BitwiseOperators.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\bin\Debug\BitwiseOperators.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\bin\Debug\BitwiseOperators.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\obj\Debug\BitwiseOperators.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\obj\Debug\BitwiseOperators.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\obj\Debug\BitwiseOperators.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\BitwiseOperators\obj\Debug\BitwiseOperators.pdb

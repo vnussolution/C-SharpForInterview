@@ -1,0 +1,11 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\bin\Debug\netcoreapp2.0\Learn.Javascript.deps.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\bin\Debug\netcoreapp2.0\Learn.Javascript.runtimeconfig.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\bin\Debug\netcoreapp2.0\Learn.Javascript.runtimeconfig.dev.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\bin\Debug\netcoreapp2.0\Learn.Javascript.dll
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\bin\Debug\netcoreapp2.0\Learn.Javascript.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.AssemblyInfoInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.AssemblyInfo.cs
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.dll
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Learn.Javascript\obj\Debug\netcoreapp2.0\Learn.Javascript.csprojResolveAssemblyReference.cache

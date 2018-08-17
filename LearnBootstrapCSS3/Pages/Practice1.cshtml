@@ -1,0 +1,142 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="out">
+    <div class="in">
+        <div class="div-text">text fred</div>
+    </div>
+</div>
+
+<div class="out">
+    <div class="in long-text">
+        <div class="div-text">text fasdf asdf sdfg df dfdf dfsdfred</div>
+    </div>
+</div>
+
+<div class=" table">
+    <div class=" table-cell">
+        <div class="div-text">text fasdf asdf sdfg df dfdf dfsdfred</div>
+    </div>
+</div>
+
+<hr />
+
+<div class="form-group">
+    <h2 class="dom" id="dom">learn shadow DOM</h2>
+    <div id="shadowHost">
+        <span id="child">this is not part of shadow DOM</span>
+    </div>
+
+</div>
+<h2 class="dom" id="dom">learn shadow DOM</h2>
+
+
+<template id="news-widget">
+    <style type="text/css">
+
+
+        h2 {
+            color: green;
+        }
+    </style>
+
+    <h2 class="dom" id="dom"> News Widget shadow DOM</h2>
+</template>
+<hr />
+
+<div class="form-group">
+    <h1>build triangle</h1>
+    <div class="tri"></div>
+</div>
+<hr />
+
+<div class="form-group">
+    <h1>psudo element</h1>
+    <div class="psudo">HI</div>
+</div>
+
+<hr />
+
+<div class="form-group">
+    <h1 contenteditable="true">Data attribute</h1>
+    <div class="data-attribute" data-name="frankie">profile</div>
+</div>
+
+
+
+@section Scripts
+    {
+    <script>
+
+        let arr = [] + [];
+        console.log('hello - ', arr);
+        const shadowHost = document.getElementById('shadowHost');
+        const shadowRoot = shadowHost.createShadowRoot();
+        const shadowChild = document.createElement('span');
+
+        shadowChild.innerHTML = document.getElementById('news-widget').innerHTML;
+
+        shadowRoot.appendChild(shadowChild);
+
+
+        function y() {
+            console.log(this.length); // this = arguments object
+        }
+
+        var x = {
+            length: 5,
+            method: function (y) { arguments[0]() }
+        }
+
+        x.method(y, 3, 4, 5, 6); // 5 , it means 5 arguments
+
+        const xx = 'constructor';
+        console.log(' xxx :',
+            xx[xx](02)); // 2 , xx[xx] = property constructor of xx object = xx.contructor = String(02) = 2
+
+        console.log(0.1 + 0.2); // 0.3000000000004 , convertion error
+
+        console.log(' __proto__ ', ('hi').__proto__.__proto__.__proto__); // null
+
+
+        let o = function () {
+            //return arguments.length;
+
+            console.log(' oOo ', [].slice.call(arguments), ' -- ', arguments);
+            return [].slice.call(arguments).length;
+        }
+
+        console.log(' 000 ', o(1, 2, 3, 4));
+        console.log('uuu ', { 'aaa': 1, 'bbb': 2 });
+
+        const A = {
+            x: function () {
+                console.log('x');
+                return A;
+            },
+            y: function () {
+                console.log('y');
+                return A;
+            }
+        }
+        A.x().y();
+
+
+        console.log(ii, iii);
+
+        if (ii == '1') {
+            iii = '2';
+
+        }
+
+        var ii, iii;
+
+
+
+
+
+    </script>
+}

@@ -1,0 +1,6 @@
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/bin/Release/BitwiseOperators.exe.config
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/bin/Release/BitwiseOperators.exe
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/bin/Release/BitwiseOperators.pdb
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/obj/Release/BitwiseOperators.csproj.CoreCompileInputs.cache
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/obj/Release/BitwiseOperators.exe
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/BitwiseOperators/obj/Release/BitwiseOperators.pdb

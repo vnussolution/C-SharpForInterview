@@ -1,0 +1,413 @@
+﻿@{
+    ViewData["Title"] = "Practice 2";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <h3>Log Event</h3>
+        <hr />
+        <div class="form-group">
+            <button onclick="logEvent(event)" onmousedown="logEvent(event)"
+                    onmouseup="logEvent(event)" ondblclick="logEvent(event)"
+                    oncontextmenu="logEvent(event)">
+                SIngle, double or right click
+            </button>
+            <button onclick="clearText()">Clear text</button>
+        </div>
+        <div class="form-group">
+            <textarea id="txtArea" rows="10" cols="20"></textarea>
+        </div>
+
+        <hr />
+        <h3>Regular expression</h3>
+        <div class="form-group">
+            <input type="text" id="txtBox" class="form-control" value="sample value: 123asdf3333dfdf34345" />
+        </div>
+        <div class="form-group">
+            <button onclick="extractNumbers()" class="btn btn-success">extract only numbers</button>
+        </div>
+        <div class="form-group">
+            <textarea type="text" id="txtResult" rows="5"></textarea>
+        </div>
+        <hr />
+        <h3>JavaScript Cookies</h3>
+        <div class="form-group">
+            <select id="theme" onchange="setColor()">
+                <option value="select color">select color</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+            </select>
+        </div>
+
+        <hr />
+        <h3>Store multiple key value pairs in a cookie</h3>
+        <div class="form-group">
+            <input id="cookieFirstName" type="text" placeholder="firstname" />
+            <input id="cookieLastName" type="text" placeholder="lastname" />
+            <input id="cookieEmail" type="text" placeholder="email" />
+        </div>
+        <div class="form-group">
+            <button onclick="setCookie()">Set cookie</button>
+            <button onclick="getCookie()">Get cookie</button>
+            <button onclick="clearCookie()">Clear cookie</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script>
+
+        var log = function (message) {
+
+            var args = arguments.length;
+
+            console.log(message);
+        }
+
+        var S = function (id) {
+            return document.getElementById(id);
+        }
+
+
+        ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        ///////////////////////////////Store multiple key value pairs in a cookie/////////////////////////////////////
+        function setCookie() {
+
+            log(aaa);
+            var customCookie = {};
+
+            customCookie.firstname = S('cookieFirstName').value;
+            customCookie.lastname = S('cookieLastName').value;
+            customCookie.email = S('cookieEmail').value;
+
+            const jsonString = JSON.stringify(customCookie);
+
+            document.cookie = 'cookieObject=' + jsonString;
+
+
+            var aaa = '123';
+        }
+
+        function getCookie() {
+            const nameValueArray = document.cookie.split(';');
+            const str = nameValueArray[0].substring(nameValueArray[0].indexOf('=') + 1,
+                nameValueArray[0].indexOf('}') + 1);
+
+            const customCookie = JSON.parse(str);
+
+            S('cookieFirstName').value = customCookie.firstname;
+            S('cookieLastName').value = customCookie.lastname;
+            S('cookieEmail').value = customCookie.email;
+
+            console.log(' -nameValueArray-- ' + nameValueArray);
+            console.log(' -str-- ' + str);
+        }
+
+
+        function clearCookie() {
+
+            S('cookieFirstName').value = '';
+            S('cookieLastName').value = '';
+            S('cookieEmail').value = '';
+
+        }
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        //////////////////////////////JavaScript Cookies//////////////////////////////////////
+        window.onload = function () {
+            if (document.cookie.length !== 0) {
+                var values = document.cookie.split('=');
+                console.log(document.cookie, values, values[1].substring(0, values[1].indexOf(';')));
+                document.body.style.backgroundColor = values[1].substring(0, values[1].indexOf(';'));
+                document.getElementById('theme').value = values['color1'];
+
+            }
+        }
+
+
+        function setColor(parameters) {
+            var selectedColor = document.getElementById('theme').value;
+            let date = new Date();
+            date.setDate(date.getTime() + (2 * 24 * 60 * 60 * 1000));
+
+            if (selectedColor !== 'select color') {
+                document.body.style.backgroundColor = selectedColor;
+                document.cookie = 'color1=' + selectedColor
+                    + ';expires=' + date.toUTCString()
+                    + 'max-age=' + (2 * 60 * 60 * 24) // 2 days to expires// not support in IE8
+                    + ';path=/'; // apply cookie for the whole site
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////Object reflection in JavaScript////////////////////////////////////////
+        var Student = function (firstname, lastname, gender, email) {
+            this._firstName = firstname;
+            this._lastName = lastname;
+            this._gender = gender;
+            this._email = email;
+        }
+
+        Student.prototype.getFullName = function () { return this._firstName + ' ' + this._lastName; }
+
+        Student.prototype.getEmail = function () { return this._email; }
+
+        Student.prototype.getGender = function () { return this._gender; }
+
+
+        var student = new Student('frank', 'nguyen', 'male', 'frank@frank.com');
+
+        for (var property in student) {
+            log(property + ' : ' + student[property]);
+        }
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        /////////////////////////Abstract classes in JavaScript///////////////////////////////////////////
+        const Shape = function () {
+            this._shapeName = 'none';
+            throw new Error('cannot create an instance of an abstract class');
+        }
+
+        Shape.prototype.draw = function () {
+            return 'Drawing ' + this._shapeName;
+        }
+
+
+        var Square = function (name) {
+            this._shapeName = name;
+        }
+
+        Square.prototype = Object.create(Shape.prototype); // assign Shape's prototype to Circle's prototype
+
+        var square = new Square('Square');
+        log(' Abstract classes in JavaScript -' + square.draw());
+
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        //////////////////////Inheritance in JavaScript//////////////////////////////////////////////
+        var Developer = function (name) {
+            this._name = name;
+        }
+
+        Developer.prototype.getName = function () {
+            return this._name;
+        }
+
+        Developer.prototype.getNameLength = function () {
+            return this._name.length;
+        }
+
+        var SQLDeveloper = function (sqlSalary) {
+            this._sqlSalary = sqlSalary;
+        }
+
+        var dev = new Developer('csharp');
+
+        SQLDeveloper.prototype = dev; // assign Developer to be parent of SQLDeveloper
+
+        var sqlDev = new SQLDeveloper(1000);
+        log('Inheritance in JavaScrip-  sqlDev name: ' + sqlDev.getName());
+        log('Inheritance in JavaScrip (sqlDev instanceof SQLDeveloper) :' + (sqlDev instanceof SQLDeveloper));
+        log('Inheritance in JavaScrip - sqlDev.getNameLength(): ' + sqlDev.getNameLength());
+        log(' sqlDev.hasOwnProperty("_name") : ' + sqlDev.hasOwnProperty('_name'));
+        log(' sqlDev.hasOwnProperty("_sqlSalary") : ' + sqlDev.hasOwnProperty('_sqlSalary'));
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        //////////////////////Overriding JavaScript functions//////////////////////////////////////////////
+
+        var e1 = new Employee('test1', 'hello1');
+        var e2 = new Employee('test2', 'hello2');
+
+        Employee.prototype.publicGetFullName = function () {
+            return this._firstName.toUpperCase() + " -- " + this._lastName.toUpperCase();
+        }
+
+        log('e1 : ' + e1.publicGetFullName());
+        log('e2 : ' + e2.publicGetFullName());
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        ///////////////////////////Static members in JavaScript/////////////////////////////////////////
+        function Circle(radius) {
+
+            //instance member
+            this._radius = radius;
+
+            //static member
+            Circle.PI = 3.141;
+            Circle.count = ++Circle.count || 1;
+
+
+            //instance member
+            this.CalculateArea = function () {
+                return Circle.PI * this._radius * this._radius;
+            }
+
+            this.ShowCount = function () {
+                return Circle.count;
+            }
+
+        }
+
+        var circle1 = new Circle(5);
+        var circle2 = new Circle(15);
+        var circle3 = new Circle(25);
+        console.log('Static members in JavaScript - Area: ', circle1.CalculateArea());
+        console.log('Static members in JavaScript - Count: ', circle1.ShowCount());
+
+
+        ////////////////////////////////////////////////////////////////////
+
+
+        /////////////Properties in JavaScript/////////////////
+        function Customer(name, age) {
+            var _name = name;
+            var _age = age;
+
+            Object.defineProperty(this,
+                "age",
+                {
+                    get: function () { return _age; },
+                    set: function (value) {
+                        if (value > 100 || value < 1) {
+                            console.log('Properties in JavaScript -  invalid age');
+                        } else {
+                            _age = value;
+                        }
+                    }
+                });
+
+            Object.defineProperty(this,
+                "name",
+                {
+                    get: function () { return _name; }
+                });
+        }
+
+        var customer = new Customer('frank', 35);
+        customer.age = 10000;
+        customer.name = 'love';
+
+        console.log('Properties in JavaScript ' + customer.age);
+
+        /////////////
+
+        /////////Private members/////////
+        function Employee(firstName, lastName) {
+            // Private Field
+            var privateFullName;
+
+            // Public Fields
+            this._firstName = firstName;
+            this._lastName = lastName;
+
+            // Private Function
+            var privateGetFullName = function (message) {
+                privateFullName = firstName + " " + lastName + ' - message: ' + message;
+                return privateFullName;
+            }
+
+            // Privileged Function
+            this.privilegedGetFullName = function () {
+                return privateGetFullName(' privileged');
+            }
+
+            // Public Function
+            Employee.prototype.publicGetFullName = function () {
+                return this.privilegedGetFullName();
+            }
+        }
+
+        var employee = new Employee('frank', 'nguyen');
+        console.log(' ', employee.publicGetFullName());
+        console.log(' ', employee.privilegedGetFullName());
+
+
+        (function nameSpaces() {
+            var me = this;
+            me.Company = me.Company || {};
+            me.Company.TeamA = me.Company.TeamA || {};
+            me.Company.TeamB = me.Company.TeamB || {};
+
+
+            me.Company.TeamA.customer = function (firstname, lastname) {
+
+                var self = this;
+                self.firstname = firstname;
+                self.lastname = lastname;
+                self.getFullName = function () {
+                    return self.firstname + ' ' + self.lastname;
+                }
+                return self;
+            }
+
+
+            me.Company.TeamB.customer = function (firstname, lastname, middlename) {
+
+                var self = this;
+                self.firstname = firstname;
+                self.lastname = lastname;
+                self.middlename = middlename;
+                self.getFullName = function () {
+                    return self.firstname + ' - ' + self.lastname + ' - ' + self.middlename;
+                }
+                return self;
+            }
+
+            console.log(' nameSpaces function : TeamA ', me.Company.TeamA.customer('aaa', 'bbbbb').getFullName());
+            console.log(' nameSpaces function : TeamB ',
+                me.Company.TeamB.customer('aaa', 'bbbbb', 'cccccc').getFullName());
+
+        })();
+
+
+        function extractNumbers(parameters) {
+
+            // expression tool http://www.ultrapico.com/ExpressoDownload.htm
+            var input = document.getElementById('txtBox').value;
+            var result = input.match(/\d+/g); // g: to search the whole string, \d: digit, +: group
+            document.getElementById('txtResult').value = '';
+
+            if (result !== null)
+                for (var i = 0; i < result.length; i++) {
+                    document.getElementById('txtResult').value += result[i] + '\r\n';
+
+                }
+
+
+        }
+
+        function logEvent(event) {
+            event = event || window.event; // window.event is for IE8 or older
+            document.getElementById('txtArea').value += event.type + '\r\n';
+
+            console.log(event);
+        }
+
+        function clearText() {
+            document.getElementById('txtArea').value = '';
+        }
+    </script>
+}

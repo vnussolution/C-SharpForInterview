@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\bin\Debug\MulticastDelegates.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\bin\Debug\MulticastDelegates.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\bin\Debug\MulticastDelegates.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\obj\Debug\MulticastDelegates.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\obj\Debug\MulticastDelegates.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\obj\Debug\MulticastDelegates.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\MulticastDelegates\obj\Debug\MulticastDelegates.pdb

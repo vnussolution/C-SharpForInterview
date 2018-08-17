@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Acme Product Management</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="productManagement">
+    <div ng-controller='IndexCtrl as vm'>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Acme Product Management</div>
+                    <form ng-hide="vm.isLoggedIn()" class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="username (email)" ng-model="vm.userData.email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="password" ng-model="vm.userData.password" class="form-control" />
+                        </div>
+                        <button class="btn btn-default" type="submit" ng-click='vm.login()'>Login</button>
+                        <button class="btn btn-default" type="submit" ng-click='vm.registerUser()'>Register</button>
+                        <div ng-show="vm.message">{{vm.message}}</div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" ng-if="vm.isLoggedIn()">
+            <ul>
+                <li ng-click="vm.view='app/products/productListView.html'">Product List</li>
+                <li ng-click="vm.selectProduct(5)">Product id5</li>
+                <li ng-click="vm.selectProduct(0)">New Product</li>
+           
+            </ul>
+            <!--<div ng-include="'app/products/productListView.html'"></div>-->
+            <div ng-include="vm.view"></div>
+            <!--<div ng-include="'app/products/productEditView.html'"></div>-->
+        </div>
+    </div>
+   
+
+    <!-- Library Scripts -->
+    <script src="scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    
+
+<!-- Services -->
+<script src="common/common.services.js"></script>
+<script src="common/productResource.js"></script>
+<script src="common/userAccount.js"></script>
+<script src="common/currentUser.js"></script>
+<!-- Product Controllers -->
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+</body>
+
+</html>

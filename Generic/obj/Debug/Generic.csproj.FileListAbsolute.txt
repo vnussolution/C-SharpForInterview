@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\bin\Debug\Generic.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\bin\Debug\Generic.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\bin\Debug\Generic.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\obj\Debug\Generic.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\obj\Debug\Generic.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\obj\Debug\Generic.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Generic\obj\Debug\Generic.pdb

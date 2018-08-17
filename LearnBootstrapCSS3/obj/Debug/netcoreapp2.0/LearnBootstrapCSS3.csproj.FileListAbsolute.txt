@@ -1,0 +1,11 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\bin\Debug\netcoreapp2.0\LearnBootstrapCSS3.deps.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\bin\Debug\netcoreapp2.0\LearnBootstrapCSS3.runtimeconfig.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\bin\Debug\netcoreapp2.0\LearnBootstrapCSS3.runtimeconfig.dev.json
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\bin\Debug\netcoreapp2.0\LearnBootstrapCSS3.dll
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\bin\Debug\netcoreapp2.0\LearnBootstrapCSS3.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.AssemblyInfoInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.AssemblyInfo.cs
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.dll
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\LearnBootstrapCSS3\obj\Debug\netcoreapp2.0\LearnBootstrapCSS3.pdb

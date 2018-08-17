@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\bin\Debug\Deadlock_Multithreaded.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\bin\Debug\Deadlock_Multithreaded.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\bin\Debug\Deadlock_Multithreaded.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\obj\Debug\Deadlock_Multithreaded.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\obj\Debug\Deadlock_Multithreaded.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\obj\Debug\Deadlock_Multithreaded.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Deadlock_Multithreaded\obj\Debug\Deadlock_Multithreaded.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/bin/Release/AbstractClass.exe.config
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/bin/Release/AbstractClass.exe
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/bin/Release/AbstractClass.pdb
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/obj/Release/AbstractClass.csprojResolveAssemblyReference.cache
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/obj/Release/AbstractClass.csproj.CoreCompileInputs.cache
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/obj/Release/AbstractClass.exe
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/AbstractClass/obj/Release/AbstractClass.pdb

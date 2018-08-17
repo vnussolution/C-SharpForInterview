@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\bin\Debug\RecursiveFunction.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\bin\Debug\RecursiveFunction.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\bin\Debug\RecursiveFunction.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\obj\Debug\RecursiveFunction.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\obj\Debug\RecursiveFunction.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\RecursiveFunction\obj\Debug\RecursiveFunction.pdb

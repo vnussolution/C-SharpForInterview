@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\bin\Debug\List.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\bin\Debug\List.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\bin\Debug\List.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\obj\Debug\List.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\obj\Debug\List.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\List\obj\Debug\List.pdb

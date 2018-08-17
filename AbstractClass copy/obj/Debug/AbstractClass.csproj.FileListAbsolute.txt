@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\bin\Debug\AbstractClass.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\bin\Debug\AbstractClass.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\bin\Debug\AbstractClass.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\obj\Debug\AbstractClass.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\obj\Debug\AbstractClass.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\obj\Debug\AbstractClass.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\AbstractClass\obj\Debug\AbstractClass.csprojResolveAssemblyReference.cache

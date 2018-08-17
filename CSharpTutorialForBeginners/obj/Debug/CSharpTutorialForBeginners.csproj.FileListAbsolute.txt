@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\bin\Debug\CSharpTutorialForBeginners.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\bin\Debug\CSharpTutorialForBeginners.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\bin\Debug\CSharpTutorialForBeginners.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\obj\Debug\CSharpTutorialForBeginners.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\obj\Debug\CSharpTutorialForBeginners.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\obj\Debug\CSharpTutorialForBeginners.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\CSharpTutorialForBeginners\obj\Debug\CSharpTutorialForBeginners.pdb

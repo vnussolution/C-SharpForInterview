@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\bin\Debug\ListListGeneric.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\bin\Debug\ListListGeneric.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\bin\Debug\ListListGeneric.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\obj\Debug\ListListGeneric.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\obj\Debug\ListListGeneric.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\ListListGeneric\obj\Debug\ListListGeneric.pdb

@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\bin\Debug\OverrideCoreMethods.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\bin\Debug\OverrideCoreMethods.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\bin\Debug\OverrideCoreMethods.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\obj\Debug\OverrideCoreMethods.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\obj\Debug\OverrideCoreMethods.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\obj\Debug\OverrideCoreMethods.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\OverrideCoreMethods\obj\Debug\OverrideCoreMethods.csprojResolveAssemblyReference.cache

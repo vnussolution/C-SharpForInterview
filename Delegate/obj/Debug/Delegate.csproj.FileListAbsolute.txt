@@ -1,0 +1,7 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\bin\Debug\Delegate.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\bin\Debug\Delegate.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\bin\Debug\Delegate.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\obj\Debug\Delegate.csprojResolveAssemblyReference.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\obj\Debug\Delegate.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\obj\Debug\Delegate.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Delegate\obj\Debug\Delegate.pdb

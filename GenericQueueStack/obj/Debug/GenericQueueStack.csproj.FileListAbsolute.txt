@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\bin\Debug\GenericQueueStack.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\bin\Debug\GenericQueueStack.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\bin\Debug\GenericQueueStack.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\obj\Debug\GenericQueueStack.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\obj\Debug\GenericQueueStack.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\GenericQueueStack\obj\Debug\GenericQueueStack.pdb

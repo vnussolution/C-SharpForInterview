@@ -1,0 +1,6 @@
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\bin\Debug\Func.exe.config
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\bin\Debug\Func.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\bin\Debug\Func.pdb
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\obj\Debug\Func.csproj.CoreCompileInputs.cache
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\obj\Debug\Func.exe
+C:\Users\QT\source\repos\CSharpTutorialForBeginners\Func\obj\Debug\Func.pdb
