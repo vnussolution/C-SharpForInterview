@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.AngularJS", "Learn.An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn.JQuery", "Learn.JQuery\Learn.JQuery.csproj", "{0188B8FD-CC3D-4CC7-83A0-A09D853B63C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton-DesignPattern", "Singleton-DesignPattern\Singleton-DesignPattern.csproj", "{ECF532B7-C572-40F5-B9F9-15C549B0B893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{0188B8FD-CC3D-4CC7-83A0-A09D853B63C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0188B8FD-CC3D-4CC7-83A0-A09D853B63C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0188B8FD-CC3D-4CC7-83A0-A09D853B63C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF532B7-C572-40F5-B9F9-15C549B0B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF532B7-C572-40F5-B9F9-15C549B0B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF532B7-C572-40F5-B9F9-15C549B0B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF532B7-C572-40F5-B9F9-15C549B0B893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

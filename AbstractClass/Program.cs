@@ -30,7 +30,6 @@ namespace AbstractClass
         }
 
         // abstract class can have constructor
-        //
         protected Customer()
         {
             // child class will call this automatically

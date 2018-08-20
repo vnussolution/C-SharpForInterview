@@ -1,0 +1,10 @@
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/bin/Release/netcoreapp2.0/Singleton-DesignPattern.deps.json
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/bin/Release/netcoreapp2.0/Singleton-DesignPattern.runtimeconfig.json
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/bin/Release/netcoreapp2.0/Singleton-DesignPattern.runtimeconfig.dev.json
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/bin/Release/netcoreapp2.0/Singleton-DesignPattern.dll
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/bin/Release/netcoreapp2.0/Singleton-DesignPattern.pdb
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/obj/Release/netcoreapp2.0/Singleton-DesignPattern.csproj.CoreCompileInputs.cache
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/obj/Release/netcoreapp2.0/Singleton-DesignPattern.AssemblyInfoInputs.cache
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/obj/Release/netcoreapp2.0/Singleton-DesignPattern.AssemblyInfo.cs
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/obj/Release/netcoreapp2.0/Singleton-DesignPattern.dll
+/Users/trucnguyen/Desktop/deleteMe/CSharpTutorialForBeginners/Singleton-DesignPattern/obj/Release/netcoreapp2.0/Singleton-DesignPattern.pdb
